@@ -33,10 +33,10 @@
 
         <p align="center"><img src="./images/data_vis.png" alt="" width="1000" height="420">   </p>
         <p align="center">
-
+        <br>
         <p align="left">
         <p align="justify">
-        <font size="4" ,="" font="font" face="Arial"> We collect a large-scale dataset of unconstrained images and annotate hand locations and their contact states.  
+        <font size="4" ,="" font="font" face="Arial"> This work is based on <a href="https://arxiv.org/pdf/2010.09676.pdf" target="_blank">our NeurIPS 2020 paper</a>. We collect a large-scale dataset of unconstrained images and annotate hand locations and their contact states.  
         <br>
         <br>
         We annotate hands by quadrilateral bounding boxes and provide contact state annotations by recognizing the following four conditions, namely: (1) No-Contact: the hand is not in contact with any object in the scene; (2) Self-Contact: the hand is in contact with another body part of the same person; (3) Other-Person-Contact: the hand is in contact with another person; and (4) Object-Contact: the hand is holding or touching an object other than people. These conditions are not mutually exclusive, and a hand can be in multiple states. For each hand instance, we annotate the four contact states by answering Yes, No, or Unsure.
@@ -49,31 +49,78 @@
         <br>
         <br>
 
-        <font size="5" ,="" font="font" face="Arial"><b>Examples</b></font></p> 
+        <p><font size="5" ,="" font="font" face="Arial"><b>Examples</b></font></p> 
         
-        <p align="center"><img src="./images/sample_visualizations.png" alt="" width="700" height="420">   </p>
-        <p align="center">
-            
-        <!-- <p align="justify">
-        <font size="4" ,="" font="font" face="Arial"> Trung, you need to add around 10 sample images. Please see sample ./images/sample_visualizations. </font> </p> -->
+        <div align="center">
+            <img src="./images/data1-1.png" alt="" width="280" height="250"/> 
+            <img src="./images/data2-1.png" alt="" width="280" height="250"/> 
+            <img src="./images/data3-1.png" alt="" width="280" height="250"/> 
+            <img src="./images/data4-1.png" alt="" width="280" height="250"/>
+            <img src="./images/data5-1.png" alt="" width="280" height="250"/>
+            <img src="./images/data6-1.png" alt="" width="280" height="250"/>
+        </div>
         <br>
+        <p align="left">
+            <font size="3" ,="" font="font" face="Arial">
+                <b>Sample data from ContactHands.</b> We show the bounding box annotations in green color. 
+                To avoid clutter, we display contact states for only two hand instances per image. 
+                The notations NC, SC, PC, and OC denote No-Contact, Self-Contact, Other-Person-Contact, and Object-Contact. 
+                We highlight the contact state for a hand by <a style="color:red">red</a> color. If a contact state is unsure, we highlight it in <a style="color:blue">blue</a>. 
+            </font>
+        </p>
+        <br>
+        <!-- <p><font size="5" ,="" font="font" face="Arial"><b>Paper</b></font></p> 
+        
+        <p>
+            <font size="4" ,="" font="font" face="Arial"> <a href="https://arxiv.org/pdf/2010.09676.pdf" target="_blank"> Detecting Hands and Recognizing Physical Contact in the Wild</a>. Supreeth Narasimhaswamy, Trung Nguyen, and M. Hoai, Advances in Neural Information Processing Systems (NeurIPS) 2020.        
+        </p>
+        
+        <br> -->
+        <p><font size="5" ,="" font="font" face="Arial"><b>Citation</b></font></p>
+        <p align="left">
+            <font size="4" ,="" font="font" face="Arial">
+                If you find our work useful, please consider citing:
+            </font>
+        </p>
+        <div align="left">
+        <pre>
+            <code>
+    @inproceedings{contacthands_2020,
+        title={Detecting Hands and Recognizing Physical Contact in the Wild},
+        author={Supreeth Narasimhaswamy and Trung Nguyen and Minh Hoai},
+        booktitle={Advances in Neural Information Processing Systems},
+        year={2020},
+    }
+            </code>
+        </pre>
+        </div>  
 
-    
-        <br> 
         <p align="left">
         <font size="5" ,="" font="font" face="Arial"><b>Download </b></font></p> 
         <p align="justify">
-        <font size="4" ,="" font="font" face="Arial"> <a href="https://public.vinai.io/ContactHands.zip"><strong> [Download link] </strong></a>
-    
+        <font size="4" ,="" font="font" face="Arial"> The dataset (4.5G) can be dowloaded from <a href="https://public.vinai.io/ContactHands.zip" target="_blank"><strong>VinAI Server</strong></a>
+             and <a href="https://drive.google.com/file/d/1bhl1ZJjkSr3lTP61CNpj6KqIAPCSYJ3q/view?usp=sharing" target="_blank"><strong>Google Drive</strong></a>.
          <br>
          <br>
 
         <p align="left">
-        <font size="5" ,="" font="font" face="Arial"><b>Copyright </b></font></p> 
-        <p align="justify">
+        <font size="5" ,="" font="font" face="Arial"><b>Copyright and Disclaimer</b></font></p>
+
+        <p align="left">
         <font size="4" ,="" font="font" face="Arial"> 
-            The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder.
-        </font>
+            <em>
+                Copyright: 
+            </em>
+            Notwithstanding the publish and/or disclosure of this document, the data, and any material in pertaining to this document (collectively the “Works”), all copyright and all rights therein are maintained by and remained proprietary property of the authors and/or the copyright holders. 
+        </font></p>
+        <p align="left">
+            <font size="4" ,="" font="font" face="Arial">
+                <em>
+                    Disclaimer: 
+                </em>
+                The Works are provided “AS IS” without warranties or conditions of any kind either expressed or implied.  To the fullest extent possible under applicable law, the authors and/or the copyright holders disclaim any and all warranties and conditions, expressed or implied, including but not limited to, implied warranties or conditions of merchantability and fitness for a particular purpose, non-infringement or other violation of rights or breach of contract.  The authors and/or the copyright holders of the Works do not warrant nor make any representations of any kind in relation to, or in connection with the use, accuracy, timelines, completeness, efficacy, fitness, applicability, performance, security, availability or reliability of the Works, or the results from the use of the Works. In no event and under no circumstance shall the authors and/or the copyright holders of the Works be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising out of or in connection with the Works, or the use of the Works.
+            </font></p>
+        
         <br>
         <br>
         <br>
